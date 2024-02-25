@@ -3,78 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My History</title>
-    <script src="https://kit.fontawesome.com/
-    c32adfdcda.js" crossorigin="anonymous"></script>
+    <title>URRO</title>
     <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
-    <article id="HOME">
-    <div class="main">
-        <div class="navbar">
-            <img src="image/Logo.png" class="logo">
-
-            <ul>
-                <li><a href="#HOME">HOME</a></li>
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="#">MY SKILLS</a></li>
-                <li><a href="#">CONTACT</a></li>
-            </ul>
-        </div>
-
-        <div class="info">
-            <h3>Hi, I'm<span> A.lucky</span></h3>
-            <h1><span>W</span>EB <span> DESIGNER</span></h1>
-            <H3>designer and developer from Baidoa, Somalia.
-                I create<br> websites to do businesses do better <br>
-                online</H3>
-                <a href="#">Hire me</a>
-        </div>
-
-        <div class="image">
-            <img src="image/Awil Hassan Mohamed.png" class="awil">
-        </div>
-
-        <div class="icons">
-            <a href="https://wa.me/+252612406817"><ion-icon name="logo-whatsapp"></ion-icon></a>
-            <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
-            <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
-         </div>
-    </div>
-</article>
-    <!-- Halkan waxaa ka bilaabaneya About section -->
-    
-<article id="about">
-
- <div class="About">
-    <section class="word">
-    <h1>About Me</h1> 
-    <h2>My name is Awil Hassan Mohamed</h2>  
-    
-    <p>I'm programmer & Web developer, 
-        , I create websites to do <span>bu</span>sinesses do batter online<br>
-        I was porn in<span> Q/dheere</span> District in <span>2003</span>
-
-        I studied in the same district.<br>
-        From the first grade to the eighth grade, I attended Sheikh Al-Nur Primary School.<br>
-        I graduated in 2015
-        In 2017 I became one of the students of Al-Qalam School.<br> I passed the 2020-2021 exam and entered the government exam.<br>
-        I scored 89.71%,
-        After the year 2021,<br> I joined plasma university, which I have been attending until now.
-        
-    </p>
-   
-    <button><a href="index.html">BACK TO HOME</a></button>
-</section>
-    
- </div>
-
- 
-</article>
-
-
-<!-- Halkan waa Contact me oo kala soo hadli karta -->
-
-<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hidesidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="33" viewBox="0 -960 960 960" width="33"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">HOME</a></li>
+        </ul>
+        <ul>
+            <li id="logo"><a href="#"><img src="Img/best logo of urro.png" alt="logo"></a></li>
+            <li class="hideOnMobile"><a href="#">HOME</a></li>
+            <li class="hideOnMobile"><a href="#">HOME</a></li>
+            <li class="hideOnMobile"><a href="#">HOME</a></li>
+            <li class="hideOnMobile"><a href="#">HOME</a></li>
+            <li onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="33" viewBox="0 -960 960 960" width="28"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+    </nav>
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hidesidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
 </body>
 </html>
